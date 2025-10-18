@@ -1,4 +1,4 @@
-# An-lise-de-Valores
+# Analise-de-Valores
 
 Um projeto simples e interativo feito com **HTML, CSS e JavaScript**, que permite adicionar números entre 1 e 100 e analisar automaticamente **quantos foram adicionados**, **qual o maior e o menor valor**, **a soma total** e **a média dos números**.
 
