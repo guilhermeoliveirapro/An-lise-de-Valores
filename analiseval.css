@@ -1,0 +1,112 @@
+body { /* body completo */
+    background-image: url('quadro\ negro.jpg');
+    background-size: cover;      
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 1px;
+}
+
+#cabeçalho p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-weight: normal;
+    font-size: 1.20rem;
+    color: rgba(0, 0, 0, 0.877);
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+section { /* Div e Section inteira */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.950);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 650px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;  
+    text-align: left;     
+}
+
+#textocabeça { /* Título */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.950);
+    color: rgba(0, 0, 0, 0.877);
+    text-align: center;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 650px;
+    height: auto;
+    display: inline-block;
+    flex-direction: column;
+}
+
+#val { /* Lista */
+    background-color: rgb(255, 255, 255);
+    list-style: circle;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.877);
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%; 
+}
+
+#val li { /* Lista */
+    background: rgb(255, 255, 255);
+    margin: 5px 0;
+    padding: 6px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+input[type="number"], input[type="button"], select { /* Botão Adicionar ( Tamanho e fontes )*/
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="button"] { /* Botão Adicionar ( Cores e animação ) */
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+input[type="button"]:hover { /* Botão Adicionar ( Fundo ) */
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+#res {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    margin-top: 0px;
+    text-align: left;
+}
+
+footer {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
