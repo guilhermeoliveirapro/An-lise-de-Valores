@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análise de Valores</title>
+    <title>ANÁLISE DE VALORES</title>
     <link rel="stylesheet" href="analiseval.css">
 </head>
 <body>
     <header>
-        <h1 id="textocabeça">ANÁLISE DE VALORES</h1>
+        <h1>Análise de Valores</h1>
     </header>
     <section>
-        <div id="cabeçalho">
-            <p>NÚMEROS (ENTRE 1 E 100): <input type="number" name="valor" id="txtn">
-            <input type="button" value="ADICIONAR VALOR" onclick="adicionar()"></p>
+        <div> 
+            Número (entre 1 e 100):
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><select name="flista" id="flista" size="6"></select>
+            <br><input type="button" value="Finalizar" onclick="finalizar()">
         </div>
-        <div id="lista">
-            <ul id="val"></ul> 
-        </div>
-        <div id="finalbutton">
-            <input type="button" value="FINALIZAR" onclick="finalizar()">
-        </div>
-        <div id="res">   
+        <div id="res">
+
         </div>
     </section>
     <footer>
-        <p>&copy; Neovate</p>
+        <p>&copy; NEOVATE </p>
     </footer>
     <script src="analiseval.js"></script>
 </body>
