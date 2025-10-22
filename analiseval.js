@@ -3,19 +3,11 @@ const lista = document.querySelector('#flista')
 const res = document.querySelector('#res')
 const valores = []
 
-function isNumero(n){
-    return Number(num.value) > 0 && Number(num.value) <= 100
-}
+const isNumero = (n) => Number(n) > 0 && Number(n) <= 100 // Verificar se o valor é válido (é positivo e está abaixo de 100)
 
-function inLista(n, l) {
-    if (l.indexOf(Number(n)) != -1){
-        return true
-    } else {
-        return false
-    }
-}
-
-function adicionar() {
+const inLista = (n, l) => l.indexOf(Number(n)) != -1 // Verificar se o valor está presente na lista
+  
+const adicionar = () => {
     if (isNumero(num.value) && !inLista(num.value, valores)){
         valores.push(Number(num.value))
         let item = document.createElement('option')
@@ -29,7 +21,7 @@ function adicionar() {
     num.focus()
 }
 
-function finalizar() {
+const finalizar = () => {
     if (valores.length == 0){
         alert('[ERRO] ADICIONE VALORES ANTES DE FINALIZAR')
     } else {
@@ -38,15 +30,13 @@ function finalizar() {
         let media = 0
         let maior = valores[0]
         let menor = valores[0]
-        
-        for(let pos in valores) {
-            soma += valores[pos]
-            
-            if (valores[pos] > maior)
-                maior = valores[pos]
 
-            if (valores[pos] < menor)
-                menor = valores[pos]
+        for (let numero of valores){
+            soma += numero
+            if (numero > maior)
+                maior = numero
+            if (numero < menor)
+                menor = numero
         }
         media = soma/total
         res.innerHTML = ''
